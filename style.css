@@ -1,5 +1,5 @@
 ﻿body {
-   
+
 }
 
 #title {
@@ -125,7 +125,7 @@
 
 #datingInfo {
     display:none;
-  
+ 
     text-align: left;
    
    
@@ -149,12 +149,19 @@
 
 .iconTitle {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     
     color: black;
     font-family: 'Quicksand', sans-serif;
 }
 
+#bookTitle {
+    display: none;
+}
+
+#bookInfo {
+    display: none;
+}
 #pizzaTitle {
     display:none;
 }
@@ -235,4 +242,14 @@ footer {
     height: 400px;
     width: 600px;
     border-radius: 5%;
+}
+
+.codeSample {
+    text-align: center;
+    font-size: 30px;
+}
+
+#feelFree {
+    text-align: center;
+    font-size: 15px;
 }

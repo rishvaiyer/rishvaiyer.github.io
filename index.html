@@ -41,12 +41,14 @@
             $("#projects").hide();
             $("#about").hide();
             $("#contact").show();
+
         }
         function showProjects() {
             $("#experience").hide();
             $("#contact").hide();
             $("#about").hide();
             $("#projects").show();
+        
         }
 
         function showDating() {
@@ -56,7 +58,8 @@
             $("#datingTitle").show();
             $("#networkTitle").hide();
             $("#pizzaTitle").hide();
-
+            $("#bookTitle").hide();
+            $("#bookInfo").hide();
         }
         function showNetwork() {
             $('#networkInfo').show();
@@ -65,7 +68,8 @@
             $("#networkTitle").show();
             $("#datingTitle").hide();
             $("#pizzaTitle").hide();
-
+            $("#bookTitle").hide();
+            $("#bookInfo").hide();
         }
 
         function showPizza() {
@@ -73,6 +77,21 @@
             $('#networkInfo').hide();
             $('#datingInfo').hide();
             $("#pizzaTitle").show();
+            $("#datingTitle").hide();
+            $("#networkTitle").hide();
+            $("#bookTitle").hide();
+            $("#bookInfo").hide();
+
+        }
+
+
+        function showBook() {
+            $("#bookInfo").show();
+            $('#pizzaInfo').hide();
+            $('#networkInfo').hide();
+            $('#datingInfo').hide();
+            $("#pizzaTitle").hide();
+            $("#bookTitle").show();
             $("#datingTitle").hide();
             $("#networkTitle").hide();
 
@@ -137,6 +156,7 @@
                               C#            <br />   
                               REST Web Services   <br />      
                               ASP.NET <br />
+                            ASP.NET Core<br />
                               MongoDB <br />
                                MySQL <br />
                              Java <br />
@@ -172,56 +192,70 @@
                 Smart Sensing & Devices <br />
             </div>
         </div>
-            <div id="projects">
+        <div id="projects">
 
-                <div class="heading">  Projects</div>
-                <br />
-                <div class="subheading"> Click on an image to learn more!</div>
-
-
-
-                <div id="icons">
-                    <img id="dating" src="pics/dating.png" class="image" onclick="showDating();" />
+            <div class="heading">  Projects</div>
+            <br />
+            <div class="subheading"> Click on an image to learn more!</div>
 
 
 
-                    <img id="network" src="pics/network.png" class="image" onclick="showNetwork();" />
+            <div id="icons">
+                <img id="dating" src="pics/dating.png" class="image" onclick="showDating();" />
 
 
-                    <img id="pizza" src="pics/pizza.png" class="image" onclick="showPizza()" />
-                    <br /><br />
 
-                </div>
-                <div id="datingTitle" class="iconTitle"> [ Dating Website ] </div>
-                <div id="networkTitle" class="iconTitle"> [ Networking Web App ]</div>
-                <div id="pizzaTitle" class="iconTitle"> [ Pizza Shop ] </div>
+                <img id="network" src="pics/network.png" class="image" onclick="showNetwork();" />
+
+
+                <img id="pizza" src="pics/pizza.png" class="image" onclick="showPizza()" />
+                <img id="book" src="pics/book.png" class="image" onclick="showBook()" />
                 <br /><br />
 
-                <div id="datingInfo">
-
-                    • Dating website that allows members to create a profile, browse all profiles by various filters, and like or dislike members
-                    <br />• Created a Web API to store and retrieve all data from a SQL database
-                    <br /><div class="technologiesUsed">Technologies used: HTML/CSS, JavaScript, jQuery, SQL</div>
-                </div>
-                <div id="networkInfo">
-                    • Web application that allows employers to create a profile and post jobs, students to view jobs and receive inbox notifications when a new job match is found <br />
-                    • Utilized Node.js, Socket.IO, Express JS to create a real-time chat feature for employers and students.<br />
-                    • Created a Web API to store and retrieve all data from MongoDB<br />
-                    <br /><div class="technologiesUsed">Technologies used: HTML/CSS, Bootstrap, JavaScript, jQuery, Node.js, Express.js, Socket.IO, MongoDB</div>
-<br />
-
-
-    I created an in-depth tutorial that teaches how to re construct this web app step by step and explains how all the different technologies come together to make it work!
- <div class="blurb">   <br />You can view the tutorial <a href="nodeTutorial.html"> here</a>.
-</div>
-                </div>
-                <div id="pizzaInfo">
-         
-                    • Created a pizza shop web app that allows users to place a custom pizza order
-                    <br />• Utilized server side processing to calculate total and display reciept
-                    <br /><div class="technologiesUsed">Technologies used: HTML/CSS, JavaScript, jQuery, Bootstrap, ASP.NET</div>
-                </div>
             </div>
+            <div id="datingTitle" class="iconTitle"> [ Dating Website ] <br /> <a href="https://github.com/rishvaiyer/Dating-Website"> <i class="fab fa-github"></i></a></div>
+            <div id="networkTitle" class="iconTitle"> [ Networking Web App ] <br /><a href="https://github.com/rishvaiyer/NetworkingWebApp"> <i class="fab fa-github"></i></a></div>
+            <div id="pizzaTitle" class="iconTitle"> [ Pizza Shop ] <br /> <a href="https://github.com/rishvaiyer/Dating-Website"> <i class="fab fa-github"></i></a></div>
+            <div id="bookTitle" class="iconTitle"> [Book Store Management System] <br /> <a href="https://github.com/rishvaiyer/BookManagementSystem"> <i class="fab fa-github"></i> </a></div>
+            <br /><br />
+
+                  <div id="datingInfo">
+                   
+                      <br />
+                      • Dating website that allows members to create a profile, browse all profiles by various filters, and like or dislike members
+                      <br />• Created a Web API to store and retrieve all data from a SQL database
+                      <br /><div class="technologiesUsed">Technologies used: C#, HTML/CSS, JavaScript, jQuery, SQL, ASP.NET Core, MySQL</div>
+                  </div>
+                  <div id="networkInfo">
+       
+                  
+                      • Web application that allows employers to create a profile and post jobs, students to view jobs and receive inbox notifications when a new job match is found <br />
+                      • Utilized Node.js, Socket.IO, Express JS to create a real-time chat feature for employers and students.<br />
+                      • Created a Web API to store and retrieve all data from MongoDB<br />
+                      <br /><div class="technologiesUsed">Technologies used: HTML/CSS, Bootstrap, JavaScript, jQuery, Node.js, Express.js, Socket.IO, MongoDB</div>
+                      <br />
+
+
+                      I created an in-depth tutorial that teaches how to re construct this web app step by step and explains how all the different technologies come together to make it work!
+                      <div class="blurb">
+                          <br />You can view the tutorial <a href="nodeTutorial.html"> here</a>.
+                      </div>
+                  </div>
+                  <div id="pizzaInfo">
+                  
+                      • Created a pizza shop web app that allows users to place a custom pizza order
+                      <br />• Utilized server side processing to calculate total and display reciept
+                      <br /><div class="technologiesUsed">Technologies used: HTML/CSS, JavaScript, jQuery, Bootstrap, ASP.NET</div>
+                  </div>
+                  <div id="bookInfo">
+                    
+                      
+                      • Created a book management system that allows users to rent or purchased books retireved from database.
+                      <br />• Creates management report and displays in gridview showing relevant information for each book, including how many were bought or rented, and total amount of sales.
+                      <br /><div class="technologiesUsed">Technologies used: C#, HTML/CSS, JavaScript, jQuery, Bootstrap, ASP.NET, MySQL</div>
+                  </div>
+
+        </div>
             <div id="experience">
 
                 <div class="heading">  Experience</div>
@@ -248,13 +282,14 @@
 
                 <div class="heading">  Contact</div>
                 <br /><br />
+                <div id="feelFree">     I'm always open to making new connections, feel free to reach out!<br /></div>
                 <div id="contactIcons">
                     <a href="mailto:tug60798@temple.edu">  <i class="fa fa-envelope"></i> </a>
                     <a href="https://www.linkedin.com/in/rishvaiyer/">  <i class="fab fa-linkedin-in"></i> </a>
                     <a href="https://github.com/rishvaiyer"> <i class="fab fa-github"></i> </a>
+                    <a href="ResumeRishIyer_V15.pdf"> <i class="fab fa-file-text"></i> </a>
                 </div>
             </div>
-
 
 
 
