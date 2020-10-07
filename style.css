@@ -224,6 +224,9 @@ footer {
     text-align: center;
 }
 
+#about {
+    text-align: center;
+}
 .subTitle {
     font-size: 15px;
     font-family: 'Quicksand', sans-serif;
@@ -269,3 +272,4 @@ footer {
 .bold {
     font-weight: bolder;
 }
+
