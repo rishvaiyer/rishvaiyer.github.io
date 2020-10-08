@@ -39,7 +39,8 @@
     padding-bottom: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: lightgreen;
+    background-color: black;
+    color: white;
     display: none;
     border-radius: 25px;
     margin-bottom: 5%;
@@ -49,7 +50,8 @@
 #projects {
     margin: auto;
     width: 70%;
-    background-color: bisque;
+    background-color: black;
+    color: white;
  
     padding-top: 2%;
     padding-bottom: 2%;
@@ -62,7 +64,8 @@
 }
 
 #experience {
-    background-color: lightblue;
+    background-color: black;
+    color: white;
     margin: auto;
     width: 70%;
     padding-top: 2%;
@@ -83,7 +86,8 @@
     padding-bottom: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: lightgrey;
+    background-color: black;
+    color: white;
     border-radius: 25px;
     margin-bottom: 5%;
     font-family: 'Quicksand', sans-serif;
@@ -101,7 +105,7 @@
     font-family: 'Quicksand', sans-serif;
     text-align: left;
     font-size: 20px;
-    color: black;
+    color: white;
     text-decoration: underline;
 
     
@@ -120,12 +124,13 @@
 
 .subheading {
     font-size: 12px;
-    color:black;
+    color:white;
 }
 
 #datingInfo {
     display:none;
- 
+    font-size: 20px;
+ color: white;
     text-align: left;
    
    
@@ -133,16 +138,20 @@
 
 #pizzaInfo {
     display:none;
+    font-size: 20px;
         text-align: left;
-
+color: white;
 }
 
 #networkInfo {
     display: none;
+    color: white;
   text-align: left;
+  font-size: 20px;
 }
 
 #icons {
+    color: white;
     text-align: center;
 
 }
@@ -151,15 +160,18 @@
     text-align: center;
     font-size: 30px;
     
-    color: black;
+    color: white;
     font-family: 'Quicksand', sans-serif;
 }
 
 #bookTitle {
+    color: white;
     display: none;
 }
 
 #bookInfo {
+    color: white;
+    font-size: 20px;
     display: none;
 }
 #pizzaTitle {
@@ -186,6 +198,7 @@
 .experienceTitle {
     font-weight: bolder;
     font-size: 18px;
+    color: hotpink;
 }
 
 #contactIcons {
@@ -196,12 +209,12 @@
 }
 
 .fa {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .fab {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -228,9 +241,10 @@ footer {
     text-align: center;
 }
 .subTitle {
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
+    color: hotpink;
 
 }
 #skills {
@@ -271,5 +285,9 @@ footer {
 
 .bold {
     font-weight: bolder;
+}
+
+.experienceInfo {
+    font-size: 20px;
 }
 
