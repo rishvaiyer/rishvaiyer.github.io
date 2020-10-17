@@ -64,6 +64,8 @@
             $("#pizzaTitle").hide();
             $("#bookTitle").hide();
             $("#bookInfo").hide();
+            $("#restTitle").hide();
+            $("#restInfo").hide();
         }
         function showNetwork() {
             $('#networkInfo').show();
@@ -74,6 +76,8 @@
             $("#pizzaTitle").hide();
             $("#bookTitle").hide();
             $("#bookInfo").hide();
+            $("#restTitle").hide();
+            $("#restInfo").hide();
         }
 
         function showPizza() {
@@ -85,6 +89,8 @@
             $("#networkTitle").hide();
             $("#bookTitle").hide();
             $("#bookInfo").hide();
+            $("#restTitle").hide();
+            $("#restInfo").hide();
 
         }
 
@@ -98,6 +104,22 @@
             $("#bookTitle").show();
             $("#datingTitle").hide();
             $("#networkTitle").hide();
+            $("#restTitle").hide();
+            $("#restInfo").hide();
+
+        }
+
+        function showRest() {
+            $("#bookInfo").hide();
+            $('#pizzaInfo').hide();
+            $('#networkInfo').hide();
+            $('#datingInfo').hide();
+            $("#pizzaTitle").hide();
+            $("#bookTitle").hide();
+            $("#datingTitle").hide();
+            $("#networkTitle").hide();
+            $("#restTitle").show();
+            $("#restInfo").show();
 
         }
     </script>
@@ -238,8 +260,9 @@
                 <img id="network" src="pics/network.png" class="image" onclick="showNetwork();" />
 
 
-                <img id="pizza" src="pics/pizza.png" class="image" onclick="showPizza()" />
-                <img id="book" src="pics/book.png" class="image" onclick="showBook()" />
+                <img id="pizza" src="pics/pizza.png" class="image" onclick="showPizza();" />
+                <img id="book" src="pics/book.png" class="image" onclick="showBook();" />
+                <img id="rest" src="pics/finalburger.png" class="image" onclick="showRest();" />
                 <br /><br />
 
             </div>
@@ -247,6 +270,7 @@
             <div id="networkTitle" class="iconTitle"> [ Networking Web App ] <br /><a href="https://github.com/rishvaiyer/NetworkingWebApp"> <i class="fab fa-github"></i></a></div>
             <div id="pizzaTitle" class="iconTitle"> [ Pizza Shop ] <br /> <a href="https://github.com/rishvaiyer/Dating-Website"> <i class="fab fa-github"></i></a></div>
             <div id="bookTitle" class="iconTitle"> [Book Store Management System] <br /> <a href="https://github.com/rishvaiyer/BookManagementSystem"> <i class="fab fa-github"></i> </a></div>
+            <div  id="restTitle" class="iconTitle"> [Restaurant Review Site] <br /> <a href="https://github.com/rishvaiyer/ReviewWebsite"><i class="fab fa-github"></i></a></div>
             <br /><br />
 
                   <div id="datingInfo">
@@ -275,7 +299,7 @@
                   
                       • Created a pizza shop web app that allows users to place a custom pizza order
                       <br />• Utilized server side processing to calculate total and display reciept
-                      <br /><div class="technologiesUsed">Technologies used: HTML/CSS, JavaScript, jQuery, Bootstrap, ASP.NET</div>
+                      <br /><div class="technologiesUsed">Technologies used: C#, HTML/CSS, JavaScript, jQuery, Bootstrap, ASP.NET</div>
                   </div>
                   <div id="bookInfo">
                     
@@ -283,6 +307,14 @@
                       • Created a book management system that allows users to rent or purchased books retireved from database.
                       <br />• Creates management report and displays in gridview showing relevant information for each book, including how many were bought or rented, and total amount of sales.
                       <br /><div class="technologiesUsed">Technologies used: C#, HTML/CSS, JavaScript, jQuery, Bootstrap, ASP.NET, MySQL</div>
+                  </div>
+                  <div id="restInfo">
+                      • Created a restaurant review web application that allows different types of users (reviewers, restaruant representatives, guests) to create and account and use the website. <br />
+                      • Allowed users to view reviews, make reservations, leave reviews, add restaurants, and manage data according to their account type.<br />
+                      • Utilized stored procedures for all database operations<br />
+                      • Stored and retrieved all data from SQL database<br />
+                      <br /><div class="technologiesUsed">Technologies used: C#, ASP.NET, Bootstrap, HTML5/CSS, MYSQL</div>
+                      <br />
                   </div>
 
         </div>

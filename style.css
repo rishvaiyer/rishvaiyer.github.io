@@ -150,6 +150,13 @@ color: white;
   font-size: 20px;
 }
 
+#restInfo {
+    display: none;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
 #icons {
     color: white;
     text-align: center;
@@ -186,9 +193,14 @@ color: white;
     display:none;
 }
 
+#restTitle {
+    display:none;
+}
+
 .technologiesUsed {
     font-weight: bolder;
     text-align: center;
+    color: hotpink;
 }
 
 #education {
